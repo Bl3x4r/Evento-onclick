@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- navbar -->
+        <div class="nav">
+            <div class="flex-container">
+                <h1 class="nav-title">Dojonary</h1>
+                <ul class="nav-items">
+                   <li><input id="busqueda" type="text"></li>
+                    <li>
+                        <button class="btn" onclick="changeButton(this)">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- main -->
+        <div class="flex-container main">
+
+            <!-- 2/3 width column -->
+            <div class="col-2">
+
+                <!-- user info card -->
+                <div class="card">
+                    <div class="card1-izquierda">
+                        <h2>ninja</h2>
+                        <a>noun</a><br>
+                        <a>Plural: ninjas</a><br>
+                        <a class="likes" onclick="alert('Ninja was liked')">13 Likes</a>
+                    </div>
+                    <div class="card1-derecha">
+                        A practitioner skilled in the<br>
+                        <a href="#">Japanese</a> art of <a href="#">Ninjutsu</a>
+                    </div>
+                </div>
+
+                <!-- user education card -->
+                <div class="card">
+                    <div class="card2-izquierda">
+                        <h2>ninja</h2>
+                        <a >noun</a><br>
+                        <a>Plural: ninjas</a><br>
+                        <a class="likes" onclick="alert('Ninja was liked')">37 likes</a>
+                    </div>
+                    <div class="card2-derecha">
+                        A <a href="#">programmer</a> who breaks
+                        down problems with <a href="#"> zen</a>-like
+                        focus
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 1/3 width column -->
+            <div class="col-1">
+
+                <!-- connection requests card -->
+                <div class="card">
+                    <ul class="card-list">
+                        <li class="text-card">
+                            <span>Dojonary is defined by <em class="you">YOU</em></span>
+                        </li>
+                        <li class="card-list-item">
+                            <span class="button">
+                                <button onclick="removeButton(this)">
+                                    Add Definition
+                                </button>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="/script.js"></script>
+    </body>
+</html>
